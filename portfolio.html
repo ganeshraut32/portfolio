@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganesh Raut — Data Science | Machine Learning | AI</title>
+  <meta name="description" content="Ganesh Raut — Entry-level Data Scientist / ML Engineer / Data Analyst. Python, SQL, Scikit-learn, EDA, Flask, GenAI. Open to opportunities." />
+  <meta name="keywords" content="Data Science, Machine Learning, Artificial Intelligence, ML, AI, GenAI, Generative AI, Python, SQL, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, EDA, Data Cleaning, Data Visualization, Flask, APIs, Predictive Modeling, Regression, Classification, Model Evaluation, Feature Engineering, Prompt Engineering, Analytics, Business Intelligence, Data Analyst, Freshers, Entry level">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <!-- Bootstrap (single-file site via CDN is okay) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#121826;
+      --muted:#93a0b0;
+      --accent:#41d1ff;
+      --accent-2:#8a73ff;
+      --text:#e6ecf2;
+      --chip:#1a2235;
+      --border:#1b2233;
+      --glow:0 0 0.75rem rgba(65,209,255,.35);
+    }
+    html,body{background:radial-gradient(1200px 800px at 10% -10%,rgba(65,209,255,.08),transparent 40%),
+               radial-gradient(1200px 800px at 110% 10%,rgba(138,115,255,.08),transparent 40%),
+               var(--bg); color:var(--text); scroll-behavior:smooth;}
+    a{color:#8ad8ff} a:hover{color:#b9eaff}
+    .navbar{background:rgba(9,13,21,.75)!important; backdrop-filter:saturate(140%) blur(10px); border-bottom:1px solid var(--border)}
+    .brand-dot{color:var(--accent)}
+    .btn-accent{background:linear-gradient(90deg,var(--accent),var(--accent-2)); border:0; color:#0b0f17}
+    .btn-accent:hover{filter:brightness(1.05)}
+    .hero{padding: 6rem 0 3rem}
+    .hero h1{font-weight:800; letter-spacing:.3px}
+    .tag{display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .6rem; border-radius:999px; background:var(--chip); color:#c9d6e2; border:1px solid var(--border); font-size:.85rem; margin:.25rem .35rem .25rem 0}
+    .cardx{background:linear-gradient(180deg,rgba(255,255,255,.02),transparent), var(--card); border:1px solid var(--border); border-radius:18px}
+    .shadow-glow{box-shadow:var(--glow)}
+    .avatar{
+      width:132px; height:132px; border-radius:50%;
+      border:2px dashed var(--accent); display:grid; place-items:center;
+      color:#9ab6c9; background:rgba(65,209,255,.06)
+    }
+    .avatar span{font-size:.85rem}
+    .section{padding:3rem 0}
+    .kicker{color:var(--muted); text-transform:uppercase; letter-spacing:.12em; font-size:.8rem}
+    .divider{height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent); margin:1.25rem 0}
+    .li-dot li{margin:.35rem 0}
+    .project-link .bi{vertical-align:-.1rem}
+    .sticky-cta{
+      position:fixed; right:18px; bottom:18px; z-index:1030;
+      border-radius:999px; padding:.85rem 1rem; box-shadow:var(--glow)
+    }
+    .filter-chip{cursor:pointer}
+    .filter-chip.active{outline:2px solid var(--accent); color:#fff}
+    .muted{color:var(--muted)}
+    .print-note{display:none}
+    @media print{
+      .navbar,.sticky-cta,.filter-row,.hero-cta,.links-row{display:none!important}
+      body{background:#fff; color:#000}
+      .cardx{border-color:#ccc}
+      .print-note{display:block; color:#333}
+      a{color:#000; text-decoration:underline}
+    }
+    /* Accessibility helpers */
+    .visually-hidden-focusable:active, .visually-hidden-focusable:focus { position:static!important; width:auto!important; height:auto!important; margin:0!important; overflow:visible!important; clip:auto!important; }
+  </style>
+
+  <!-- Structured Data for ATS/SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ganesh Ramkisan Raut",
+    "jobTitle":"Entry-level Data Scientist / ML Engineer / Data Analyst",
+    "email":"mailto:rautg0072@gmail.com",
+    "telephone":"+91-9011660386",
+    "address":{"@type":"PostalAddress","addressLocality":"Dharashiv","addressRegion":"Maharashtra","addressCountry":"IN"},
+    "url":"https://github.com/ganeshraut32",
+    "sameAs":[
+      "https://www.linkedin.com/in/ganesh-raut-b29758316/",
+      "https://github.com/ganeshraut32",
+      "https://rautg0072.pythonanywhere.com/",
+      "https://rautg0052.pythonanywhere.com/",
+      "https://rautg0065.pythonanywhere.com/"
+    ],
+    "alumniOf":[{"@type":"CollegeOrUniversity","name":"T.P.C.T’s College of Engineering, Dharashiv"}],
+    "knowsAbout":[
+      "Machine Learning","Artificial Intelligence","Generative AI","Data Science","Data Analysis","Predictive Modeling",
+      "Regression","Classification","Model Evaluation","Feature Engineering","EDA","Data Cleaning","Data Visualization",
+      "Python","SQL","Scikit-learn","Pandas","NumPy","Matplotlib","Seaborn","Flask","APIs","Prompt Engineering","Business Intelligence"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip link -->
+  <a class="visually-hidden-focusable" href="#content">Skip to content</a>
+
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">Ganesh<span class="brand-dot">.</span>Raut</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"><i class="bi bi-list text-light fs-2"></i></span>
+      </button>
+      <div id="navMain" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certs">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="ms-3 d-none d-lg-flex align-items-center gap-2 links-row">
+          <a href="mailto:rautg0072@gmail.com" class="btn btn-sm btn-outline-light"><i class="bi bi-envelope"></i> Email</a>
+          <a href="https://www.linkedin.com/in/ganesh-raut-b29758316/" target="_blank" class="btn btn-sm btn-outline-light"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/ganeshraut32" target="_blank" class="btn btn-sm btn-outline-light"><i class="bi bi-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <p class="kicker">Data Science · Machine Learning · AI</p>
+          <h1 class="display-5">Turning data into <span class="text-gradient">insightful decisions</span> and deployable ML solutions.</h1>
+          <p class="lead muted mt-3">
+            Enthusiastic entry-level Data Science & Analytics professional with strong Python, SQL, and ML foundations.
+            Passionate about EDA, model development, and productionizing with Flask to drive measurable business outcomes. <!-- from resume :contentReference[oaicite:1]{index=1} -->
+          </p>
+          <div class="hero-cta mt-4 d-flex flex-wrap gap-2">
+            <a href="#projects" class="btn btn-accent fw-semibold"><i class="bi bi-lightning-charge"></i> View ML/AI Projects</a>
+            <a href="#contact" class="btn btn-outline-light"><i class="bi bi-telephone"></i> Contact</a>
+          </div>
+          <div class="mt-4">
+            <span class="tag"><i class="bi bi-cpu"></i> Machine Learning</span>
+            <span class="tag"><i class="bi bi-robot"></i> AI / GenAI</span>
+            <span class="tag"><i class="bi bi-bar-chart-line"></i> EDA & BI</span>
+            <span class="tag"><i class="bi bi-cloud-upload"></i> Flask Deployments</span>
+            <span class="tag"><i class="bi bi-diagram-3"></i> Feature Engineering</span>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <!-- Add your photo by replacing inner <span> with an <img src="YOUR-PHOTO.jpg" alt="Ganesh Raut" class="w-100 h-100 rounded-circle"> -->
+          <div class="avatar mx-auto shadow-glow">
+            <img src="myphoto.jpg" alt="Ganesh Raut" class="w-100 h-100 rounded-circle">
+          </div>
+          <div class="small muted mt-3">
+            Dharashiv, Maharashtra, India · +91-9011660386 · <a href="mailto:rautg0072@gmail.com">rautg0072@gmail.com</a> <!-- :contentReference[oaicite:2]{index=2} -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h4">Experience</h2>
+            <p class="muted">Real-world exposure to data pipelines, EDA, ML modeling, and Flask-based deployment.</p>
+          </div>
+          <div class="col-lg-8">
+            <article class="cardx p-4">
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <h3 class="h5 mb-1">Data Science Intern</h3>
+                  <div class="muted">Anyatam – Adhyayan Education Services Pvt. Ltd.</div>
+                </div>
+                <div class="muted">Mar 2025 – Aug 2025</div>
+              </div>
+              <div class="divider"></div>
+              <ul class="li-dot">
+                <li>Performed data cleaning, EDA & visualization (Pandas, NumPy, Matplotlib, Seaborn) with measurable quality improvements. <!-- :contentReference[oaicite:3]{index=3} --></li>
+                <li>Built ML models to enhance predictive accuracy and decision-making for stakeholders. <!-- :contentReference[oaicite:4]{index=4} --></li>
+                <li>Developed & deployed models with Flask; improved interpretability via feature selection & tuning. <!-- :contentReference[oaicite:5]{index=5} --></li>
+              </ul>
+              <div class="small muted">Focus: Regression · Classification · Model Evaluation · Feature Engineering · Visualization</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-3">
+          <div>
+            <h2 class="h4 mb-1">Highlighted Projects</h2>
+            <p class="muted mb-0">End-to-end ML workflows with reproducible results and live demos.</p>
+          </div>
+          <div class="filter-row">
+            <span class="tag filter-chip active" data-tag="all"><i class="bi bi-sliders"></i> All</span>
+            <span class="tag filter-chip" data-tag="regression">Regression</span>
+            <span class="tag filter-chip" data-tag="classification">Classification</span>
+            <span class="tag filter-chip" data-tag="genai">GenAI</span>
+            <span class="tag filter-chip" data-tag="flask">Flask</span>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-1" id="projectGrid">
+          <!-- Project 1 -->
+          <div class="col-md-6 proj" data-tags="regression flask">
+            <div class="cardx p-4 h-100">
+              <div class="d-flex justify-content-between">
+                <h3 class="h5">Sales Prediction Using Machine Learning</h3>
+                <span class="tag">Linear Regression</span>
+              </div>
+              <p class="muted">Forecasted future sales from historical data, seasonal trends & promotions using Linear Regression; deployed with Flask for real-time predictions. <!-- :contentReference[oaicite:6]{index=6} --></p>
+              <div class="small">
+                <strong>Stack:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib, Flask, HTML/CSS, Bootstrap
+              </div>
+              <div class="mt-3 d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-light project-link" href="https://rautg0072.pythonanywhere.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 proj" data-tags="classification flask">
+            <div class="cardx p-4 h-100">
+              <div class="d-flex justify-content-between">
+                <h3 class="h5">Diabetes Risk Prediction Using ML</h3>
+                <span class="tag">Logistic Regression</span>
+              </div>
+              <p class="muted">Predicted diabetes risk from medical & lifestyle data with Logistic Regression; Flask UI for input & results, including evaluation and preprocessing. <!-- :contentReference[oaicite:7]{index=7} --></p>
+              <div class="small">
+                <strong>Stack:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib, Flask, HTML/CSS, Bootstrap
+              </div>
+              <div class="mt-3 d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-light project-link" href="https://rautg0052.pythonanywhere.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 proj" data-tags="genai flask">
+            <div class="cardx p-4 h-100">
+              <div class="d-flex justify-content-between">
+                <h3 class="h5">AI Roadmap Generator (GenAI)</h3>
+                <span class="tag">Generative AI</span>
+              </div>
+              <p class="muted">Built a Generative AI–powered site that crafts learning roadmaps via prompt engineering & API integration (Gemini/OpenAI); automated content structuring. <!-- :contentReference[oaicite:8]{index=8} --></p>
+              <div class="small">
+                <strong>Stack:</strong> Python, Flask, JavaScript, HTML/CSS, Bootstrap, GenAI APIs
+              </div>
+              <div class="mt-3 d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-light project-link" href="https://rautg0065.pythonanywhere.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="small muted mt-3">More work on GitHub: <a href="https://github.com/ganeshraut32" target="_blank">github.com/ganeshraut32</a> <!-- :contentReference[oaicite:9]{index=9} --></p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h4">Skills & Tools</h2>
+            <p class="muted">Emphasis on statistical learning, reproducible EDA, and clean deployment.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="cardx p-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="h6 text-uppercase muted">Languages</h3>
+                  <div class="mb-3">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL (MySQL)</span>
+                  </div>
+                  <h3 class="h6 text-uppercase muted">Libraries</h3>
+                  <div class="mb-3">
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">Scikit-learn</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="h6 text-uppercase muted">Core Concepts</h3>
+                  <div class="mb-3">
+                    <span class="tag">EDA</span>
+                    <span class="tag">Data Cleaning</span>
+                    <span class="tag">Data Visualization</span>
+                    <span class="tag">Model Evaluation</span>
+                    <span class="tag">Feature Engineering</span>
+                  </div>
+                  <h3 class="h6 text-uppercase muted">Platforms</h3>
+                  <div class="mb-2">
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Jupyter</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">PyCharm</span>
+                    <span class="tag">Google Colab</span>
+                    <span class="tag">Flask</span>
+                  </div>
+                </div>
+              </div>
+              <p class="small muted mb-0 mt-2">Soft Skills: Adaptability, Teamwork, Problem-Solving, Quick Learning, Time Management. <!-- :contentReference[oaicite:10]{index=10} --></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h4">Education</h2>
+            <p class="muted">Strong CS foundations with applied ML & analytics projects.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="cardx p-4">
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <h3 class="h6 mb-0">B.Tech — Computer Science & Engineering</h3>
+                  <div class="muted">T.P.C.T’s College of Engineering, Dharashiv · CGPA: 7.5</div>
+                </div>
+                <div class="muted">2021 – 2025</div>
+              </div>
+              <div class="divider"></div>
+              <div class="row small">
+                <div class="col-md-6">12th / HSC — 79.80% · 2019–2021</div>
+                <div class="col-md-6">10th / SSC — 65.60% · 2019</div>
+              </div>
+              <!-- :contentReference[oaicite:11]{index=11} -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certs" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h4">Certificates</h2>
+            <p class="muted">Industry-aligned simulations in analytics & GenAI.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="cardx p-4">
+              <ul class="li-dot">
+                <li>GenAI-powered data analytics simulation: EDA, AI delinquency prediction, storytelling, AI-driven collections strategy (Jun 2025). <!-- :contentReference[oaicite:12]{index=12} --></li>
+                <li>Deloitte Data Analytics Job Simulation (Jul 2025): hands-on practice mirroring real-world analytics workflows. <!-- :contentReference[oaicite:13]{index=13} --></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="h4">Contact</h2>
+            <p class="muted">Open to roles: Data Scientist, ML Engineer, Data Analyst (Fresher).</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="cardx p-4">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <div class="small muted">Email</div>
+                  <a href="mailto:rautg0072@gmail.com" class="fw-semibold">rautg0072@gmail.com</a>
+                </div>
+                <div class="col-md-6">
+                  <div class="small muted">Phone</div>
+                  <a href="tel:+919011660386" class="fw-semibold">+91-9011660386</a>
+                </div>
+                <div class="col-md-6">
+                  <div class="small muted">LinkedIn</div>
+                  <a href="https://www.linkedin.com/in/ganesh-raut-b29758316/" target="_blank" class="fw-semibold">linkedin.com/in/ganesh-raut-b29758316</a>
+                </div>
+                <div class="col-md-6">
+                  <div class="small muted">GitHub</div>
+                  <a href="https://github.com/ganeshraut32" target="_blank" class="fw-semibold">github.com/ganeshraut32</a>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="row gy-3">
+                <div class="col-12">
+                  <div class="small muted">Other links</div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-sm btn-outline-light" href="https://rautg0072.pythonanywhere.com/" target="_blank"><i class="bi bi-link-45deg"></i> Sales Prediction (demo)</a>
+                    <a class="btn btn-sm btn-outline-light" href="https://rautg0052.pythonanywhere.com/" target="_blank"><i class="bi bi-link-45deg"></i> Diabetes Prediction (demo)</a>
+                    <a class="btn btn-sm btn-outline-light" href="https://rautg0065.pythonanywhere.com/" target="_blank"><i class="bi bi-link-45deg"></i> AI Roadmap (demo)</a>
+                  </div>
+                  <!-- :contentReference[oaicite:14]{index=14} -->
+                </div>
+              </div>
+              <p class="print-note mt-3">Printed from ganeshraut32 — Portfolio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky CTA -->
+  <a href="mailto:rautg0072@gmail.com?subject=Interview%20Opportunity%20for%20Data%20Science%20Role" class="btn btn-accent sticky-cta">
+    <i class="bi bi-send"></i> Invite for Interview
+  </a>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container small muted">
+      <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <div>© <span id="year"></span> Ganesh Raut. All rights reserved.</div>
+        <div>
+          Languages: English · Hindi · Marathi · Hobbies: Travel, Cricket, Gaming. <!-- :contentReference[oaicite:15]{index=15} -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Internal JS -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Project filters
+    const chips = document.querySelectorAll('.filter-chip');
+    const cards = document.querySelectorAll('#projectGrid .proj');
+    chips.forEach(chip=>{
+      chip.addEventListener('click', ()=>{
+        chips.forEach(c=>c.classList.remove('active'));
+        chip.classList.add('active');
+        const tag = chip.dataset.tag;
+        cards.forEach(card=>{
+          if(tag==='all') { card.style.display=''; return; }
+          const tags = card.dataset.tags.split(' ');
+          card.style.display = tags.includes(tag) ? '' : 'none';
+        });
+      });
+    });
+
+    // Subtle heading gradient
+    (function(){
+      const style = document.createElement('style');
+      style.innerHTML = `
+        .text-gradient{
+          background: linear-gradient(90deg, var(--accent), var(--accent-2));
+          -webkit-background-clip: text; background-clip: text; color: transparent;
+        }`;
+      document.head.appendChild(style);
+    })();
+  </script>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
